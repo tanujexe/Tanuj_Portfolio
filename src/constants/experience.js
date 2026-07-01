@@ -1,42 +1,18 @@
 export const EXPERIENCE = [
   {
-    lap: "LAP 05 // CURRENT",
-    title: "AI Systems Engineering",
-    desc: "Dived into neural network models, parameter fine-tuning, embedding database nodes, and AI orchestration structures.",
-    sector: "SECTOR 3",
-    lapTime: "1m 18.4s",
-    speed: "248 km/h"
+    lap: "LAP 02 // CURRENT",
+    title: "Freelance Developer",
+    desc: "Building custom web applications, full-stack digital products, and responsive websites for clients.",
+    sector: "MAIN SECTOR",
+    lapTime: "1m 12.4s",
+    speed: "265 km/h"
   },
   {
-    lap: "LAP 04 // 2025",
-    title: "Full Stack Deployments",
-    desc: "Assembled MERN architectures connecting node execution controllers to indexing MongoDB databases.",
-    sector: "SECTOR 2",
-    lapTime: "1m 24.1s",
-    speed: "235 km/h"
-  },
-  {
-    lap: "LAP 03 // 2024",
-    title: "React Component Foundry",
-    desc: "Developed fluid component schemes, state machines, and physics-based web animations using Framer Motion.",
-    sector: "SECTOR 1",
-    lapTime: "1m 32.8s",
-    speed: "210 km/h"
-  },
-  {
-    lap: "LAP 02 // 2023",
-    title: "JavaScript Core Engines",
-    desc: "Mastered functional programming paradigms, asynchronous script pools, and browser execution algorithms.",
-    sector: "QUALIFYING",
-    lapTime: "1m 38.2s",
-    speed: "195 km/h"
-  },
-  {
-    lap: "LAP 01 // 2022",
-    title: "Drivetrain Initiation",
-    desc: "Began compiling responsive CSS grids, semantic HTML trees, and scripting basic terminal loops.",
+    lap: "LAP 01 // LEARNER",
+    title: "Self-Taught Learner",
+    desc: "Mastering frontend layouts, backend systems, database logic, and developer tools through building projects.",
     sector: "PRACTICE",
-    lapTime: "1m 45.6s",
-    speed: "160 km/h"
+    lapTime: "1m 35.8s",
+    speed: "205 km/h"
   }
 ];
