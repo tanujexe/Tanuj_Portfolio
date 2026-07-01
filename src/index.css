@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-canvas: #060709;
+  --color-surface-dark: #0e1013;
+  --color-grid-line: #1b1e24;
+  
+  /* Authentic BMW M-Sport Color Suite */
+  --color-m-blue: #1c69d4;
+  --color-m-darkblue: #002878;
+  --color-m-red: #d12630;
+  --color-m-amber: #f5a623; /* M Instrument Amber */
+}
+
+body {
+  background-color: #060709;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  background-image: radial-gradient(rgba(28, 105, 212, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Premium Carbon Fiber Weave texture */
+.carbon-weave {
+  background-color: #0c0e12;
+  background-image: 
+    linear-gradient(45deg, #090a0d 25%, transparent 25%), 
+    linear-gradient(-45deg, #090a0d 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #090a0d 75%), 
+    linear-gradient(-45deg, transparent 75%, #090a0d 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+}
+
+/* BMW M-Sport Performance Accent line */
+.m-sport-strip {
+  background: linear-gradient(
+    90deg,
+    #1c69d4 0%,
+    #1c69d4 33%,
+    #002878 33%,
+    #002878 66%,
+    #d12630 66%,
+    #d12630 100%
+  );
+}
+
+.m-sport-focus-border {
+  border-left: 4px solid #d12630;
+}
+
+/* Speedometer circular gauge clip paths */
+.gauge-border {
+  border-color: rgba(28, 105, 212, 0.2);
+}
+
+/* Custom dashboard scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060709;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b1e24;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d12630;
+}
+
+/* Text glow styles */
+.text-glow-amber {
+  text-shadow: 0 0 10px rgba(245, 166, 35, 0.5), 0 0 20px rgba(245, 166, 35, 0.2);
+}
+.text-glow-red {
+  text-shadow: 0 0 10px rgba(209, 38, 48, 0.6), 0 0 20px rgba(209, 38, 48, 0.3);
+}
+.text-glow-blue {
+  text-shadow: 0 0 10px rgba(28, 105, 212, 0.6), 0 0 20px rgba(28, 105, 212, 0.3);
+}
+
+/* Screen shaking animation for launch control countdown */
+@keyframes launch-shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-0.5deg); }
+  20% { transform: translate(-3px, 0px) rotate(0.5deg); }
+  30% { transform: translate(0px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(0.5deg); }
+  50% { transform: translate(-1px, 2px) rotate(-0.5deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-0.5deg); }
+  80% { transform: translate(-1px, -1px) rotate(0.5deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-0.5deg); }
+}
+
+.launch-shake-active {
+  animation: launch-shake 0.15s infinite;
+}
+
+/* Showroom floating platform animation */
+@keyframes showroomFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.showroom-float {
+  animation: showroomFloat 5s ease-in-out infinite;
+}
+
+/* Showroom platform reflective sweep */
+@keyframes shineSweep {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  50% { transform: translateX(100%) skewX(-15deg); }
+  100% { transform: translateX(100%) skewX(-15deg); }
+}
+.shine-sweep-active {
+  animation: shineSweep 4.5s ease-in-out infinite;
+}
+
+/* Slow spin rotation helper */
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Grid scanner sweep animation */
+@keyframes gridScan {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+.animate-grid-scan {
+  position: absolute;
+  animation: gridScan 6s linear infinite;
+}
