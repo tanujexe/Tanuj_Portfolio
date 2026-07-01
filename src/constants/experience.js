@@ -1,8 +1,8 @@
 export const EXPERIENCE = [
   {
     lap: "LAP 02 // CURRENT",
-    title: "Freelance Developer",
-    desc: "Building custom web applications, full-stack digital products, and responsive websites for clients.",
+    title: "Freelancer",
+    desc: "Building custom web applications, full-stack digital products, and AI-Automation  for clients.",
     sector: "MAIN SECTOR",
     lapTime: "1m 12.4s",
     speed: "265 km/h"
